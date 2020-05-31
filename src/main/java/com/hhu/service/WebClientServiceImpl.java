@@ -17,7 +17,7 @@ public class WebClientServiceImpl implements WebClientService {
 
     private final String _goto = "http://form.hhu.edu.cn:80/pdc/formDesignApi/S/gUTwwojq";
 
-    private final int timeout = 10000;
+    private final int timeout = 400;
 
     @Override
     public boolean checkIn(User user) throws IOException {

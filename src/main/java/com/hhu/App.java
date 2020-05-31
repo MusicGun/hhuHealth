@@ -16,8 +16,10 @@ public class App {
         WebClientService webClientService = new WebClientServiceImpl();
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("学号:");
         String id = scanner.nextLine();
 
+        System.out.print("密码:");
         String pwd = scanner.next();
         try {
             if (webClientService.checkIn(new User(id, pwd))) {
